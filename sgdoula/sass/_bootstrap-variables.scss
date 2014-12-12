@@ -13,18 +13,18 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-// $gray-base:              #000
-// $gray-darker:            lighten($gray-base, 13.5%) // #222
-// $gray-dark:              lighten($gray-base, 20%)   // #333
-// $gray:                   lighten($gray-base, 33.5%) // #555
-// $gray-light:             lighten($gray-base, 46.7%) // #777
-// $gray-lighter:           lighten($gray-base, 93.5%) // #eee
+ $gray-base:              #000;
+ $gray-darker:            lighten($gray-base, 13.5%); // #222
+ $gray-dark:              lighten($gray-base, 20%);   // #333
+ $gray:                   lighten($gray-base, 33.5%); // #555
+ $gray-light:             lighten($gray-base, 46.7%); // #777
+ $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-// $brand-primary:         darken(#428bca, 6.5%)
-// $brand-success:         #5cb85c
-// $brand-info:            #5bc0de
-// $brand-warning:         #f0ad4e
-// $brand-danger:          #d9534f
+ $brand-primary:         #80b6be;
+ $brand-success:         #98afd3;
+ $brand-info:            #9dad82;
+ $brand-warning:         #ddb1bd;
+ $brand-danger:          #c4abd2;
 
 //== Scaffolding
 //
@@ -33,12 +33,12 @@
 //** Background color for `<body>`.
 // $body-bg:               #fff
 //** Global text color on `<body>`.
-// $text-color:            $gray-dark
+ $text-color:            $brand-primary;
 
 //** Global textual link color.
-// $link-color:            $brand-primary
+ $link-color:            darken($brand-primary, 6.5%);;
 //** Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%)
+ $link-hover-color:      darken($link-color, 15%);
 //** Link hover decoration.
 // $link-hover-decoration: underline
 
@@ -351,15 +351,15 @@
 // $navbar-collapse-max-height:       340px
 
 // $navbar-default-color:             #777
-// $navbar-default-bg:                #f8f8f8
-// $navbar-default-border:            darken($navbar-default-bg, 6.5%)
+// $navbar-default-bg:                #c4abd2;
+// $navbar-default-border:            darken($navbar-default-bg, 6.5%);
 
 // Navbar links
 // $navbar-default-link-color:                #777
 // $navbar-default-link-hover-color:          #333
 // $navbar-default-link-hover-bg:             transparent
 // $navbar-default-link-active-color:         #555
-// $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%)
+// $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
 // $navbar-default-link-disabled-color:       #ccc
 // $navbar-default-link-disabled-bg:          transparent
 
@@ -376,11 +376,11 @@
 // Inverted navbar
 // Reset inverted navbar basics
 // $navbar-inverse-color:                      lighten($gray-light, 15%)
-// $navbar-inverse-bg:                         #222
+ $navbar-inverse-bg:                         #c4abd2;
 // $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%)
 
 // Inverted navbar links
-// $navbar-inverse-link-color:                 lighten($gray-light, 15%)
+ $navbar-inverse-link-color:                 darken($navbar-inverse-bg, 20%);
 // $navbar-inverse-link-hover-color:           #fff
 // $navbar-inverse-link-hover-bg:              transparent
 // $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color
@@ -467,7 +467,7 @@
 
 // $jumbotron-padding:              30px
 // $jumbotron-color:                inherit
-// $jumbotron-bg:                   $gray-lighter
+ $jumbotron-bg:                   $gray-lighter;
 // $jumbotron-heading-color:        inherit
 // $jumbotron-font-size:            ceil(($font-size-base * 1.5))
 
@@ -475,20 +475,20 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-// $state-success-text:             #3c763d
-// $state-success-bg:               #dff0d8
+ $state-success-text:             #98afd3;
+ $state-success-bg:               lighten($state-success-text, 25%);
 // $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%)
 
-// $state-info-text:                #31708f
-// $state-info-bg:                  #d9edf7
+ $state-info-text:                #9dad82;
+ $state-info-bg:                  lighten($state-info-text, 25%);
 // $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%)
 
-// $state-warning-text:             #8a6d3b
-// $state-warning-bg:               #fcf8e3
+ $state-warning-text:             darken(#ddb1bd, 10%);
+ $state-warning-bg:               lighten($state-warning-text, 25%);
 // $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%)
 
-// $state-danger-text:              #a94442
-// $state-danger-bg:                #f2dede
+ $state-danger-text:              darken(#c4abd2, 10%);
+ $state-danger-bg:                lighten($state-danger-text, 25%);
 // $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%)
 
 //== Tooltips
