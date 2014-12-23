@@ -8,7 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="stylesheets/styles.css" rel="stylesheet">
-    <link href="stylesheets/font-awesome/font-awesome.css" rel="stylesheet">
+    <link href="stylesheets/font-awesome.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,22 +18,16 @@
   </head>
 <body role="document">
 
-    <div class="container" role="main">
-    <nav class="navbar navbar-fixedi" role="navigation">
+    <div class="container" role="header">
+    <nav class="navbar navbar-fixed" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#"><img src="images/logo.png" />Sam Gadsden Doula</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav pull-right">
-            <li><a href="#about"><span class="fa fa-twitter fa-2x"></span></a></li>
-            <li><a href="#contact"><span class="fa fa-facebook fa-2x"></span></a></li>
+        <div>
+          <ul class="nav navbar-nav pull-right btn-toolbar">
+            <li><a class="btn btn-primary" href="#about"><span class="fa fa-twitter fa-lg fa-fw"></span></a> </li>
+            <li><a class="btn btn-primary" href="#contact"><span class="fa fa-facebook fa-lg fa-fw"></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -63,39 +57,51 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+           <li><a href="#resources">Resources</a></li> 
+<li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container theme-showcase" role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
-
+    <div class="container" role="main">
+      <div class="row">
+       <div class="col-md-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Antenatal doula</h3>
+            </div>
+            <div class="panel-body">
+              Brief summary of services goes here
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Postnatal doula</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+</div>
+<div class="col-md-4">        
+  <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Something else here</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div>
+</div><!-- row -->
 
       <div class="page-header">
         <h1>Buttons</h1>
