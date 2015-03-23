@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Samantha Gadsden Doula</title>
+    <title>Contact Samantha Gadsden Doula</title>
 
     <!-- Bootstrap -->
     <link href="stylesheets/styles.css" rel="stylesheet">
@@ -40,11 +40,11 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href-"about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li class="active"><a href="library.html">Library</a></li>
+            <li><a href="library.html">Library</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>   
           </ul>
                  <ul class="nav navbar-nav pull-right btn-toolbar">
             <li><a class="btn btn-default" href="https://www.facebook.com/samanthagadsdendoula/"><span class="fa fa-facebook fa-lg fa-fw"></span></a></li>
@@ -54,37 +54,47 @@
     <div class="container" role="header">
         <div class="row">
             <div class="col-xs-12">
-                <div class="jumbotron"><h1>Samantha Gadsden <small>Birth, ante and post natal doula covering south Wales</small></h1></div>
+                <div class-"jumbotron"><h1>Samantha Gadsden <small>Birth, ante and post natal doula covering south Wales</small></h1></div>
             </div>
         </div>
     </div>
     <div class="container" role="main">
         <div class="row">
-            <div class="col-xs-12"><h2>Lending library</h2>
-                <p>I have a collection of childbirth and parenting books available to loan. I charge £2.50 plus a £10 deposit to borrow a book. Borrowing is free to clients.</p></div>
-            <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Childbirth books</h3>
-                    </div>
-                    <div class="list-group">
-                        <a class="list-group-item" href="http://www.pinterandmartin.com/sweet-sleep.html"><i class="fa fa-book"></i>cSweet sleep: nighttime and naptime strategies for the breastfeeding family</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Sleep books</h3>
-                    </div>
-                    <div class="list-group">
-                        <a class="list-group-item" href="http://www.pinterandmartin.com/sweet-sleep.html"><i class="fa fa-video-camera"></i> Sweet sleep: nighttime and naptime strategies for the breastfeeding family</a>
-                    </div>
-                </div>
-            </div>
             <div class="col-xs-12">
-                <h2>Maternity wear</h2>
-                <p>I also have maternity wear to lend out ....</p>
+                <h2>Contact Sam Gadsden</h2>
+                <p>Use this form to contact me about any of my services: to enquire about hiring me as a doula, or borrowing books or maternity clothes. You can also use it if you would like to ask for advice or help with maternity issues.</p>
+                <p>Please complete all the fields below.</p>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" id="name-label" class="control-label col-xs-2">Your Name</label>
+                        <input type="text" id="name" required aria-required="true" aria-labeledby="name-label" class="form-control col-xs-10">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label" class="control-label col-xs-2">Your email address</label>
+                        <input type="email" class="form-control col-xs-10" id="email" placeholder="example@example.com" aria-describedby="email-note" required aria-labeledby="email-label" area-required="true">
+                        <em id="email-note" class="help-block col-xs-offset-2 col-xs-10">I will only use your email address to respond to your enquiry.</em>
+                    </div>
+                    <div class="form-group">
+                         <label class="control-label col-xs-2" for="phoneNumber"id="phone-label">Your phone number</label>
+                         <input type="tel" class="form-control col-xs-2" id="phoneNumber" aria-labeledby="phone-label">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Birth doula services</option>
+                            <option>Antenatal doula services</option>
+                            <option>Postnatal doula services</option>
+                            <option>Book loan</option>
+                            <option>Maternity clothes loan</option>
+                            <option>Advice</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary col-xs-offset-2 col-xs-10">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div> <!-- /container -->
