@@ -10,6 +10,6 @@ if(isset($_POST['submit'])) {
                <tr><td>Message</td><td>".$_POST['InputMessage']."</td>
                </tr></table>" ;
    mail($to, $subject, $message, $headers);
-   header('Location: contact.php');
+   header('Location: contact.html');
 }
 ?>
