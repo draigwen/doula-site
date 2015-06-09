@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Samantha Gadsden Doula</title>
+    <title>Samantha Gadsden Doula - lending library</title>
+    <meta name="description" content="Birth, antenatal and postnatal doula mothering the mother in south Wales.">
 
     <!-- Bootstrap -->
     <link href="stylesheets/styles.css" rel="stylesheet">
@@ -47,15 +48,9 @@
           </ul></div>
       </div>
     </nav></div>
-    <div class="container" role="header">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="jumbotron"><h1>Samantha Gadsden <small>Birth, ante and post natal doula covering south Wales</small></h1></div>
-            </div>
-        </div>
-    </div>
     <div class="container" role="main">
-        <div class="row">
+<?php include 'title.php'; ?>    
+    <div class="row">
             <div class="col-xs-12"><h2>Lending library</h2>
                 <p>I have a collection of childbirth and parenting books available to loan. I charge £2.50 plus a £10 deposit to borrow a book. Borrowing is free to clients.</p></div>
             <div class="col-xs-12 col-md-6">

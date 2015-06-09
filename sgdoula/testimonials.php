@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Samantha Gadsden Doula - Testimonials</title>
-
+    <meta name="description" content="Birth, antenatal and postnatal doula mothering the mother in south Wales.">
     <!-- Bootstrap -->
     <link href="stylesheets/styles.css" rel="stylesheet">
     <link href="stylesheets/font-awesome.css" rel="stylesheet">
