@@ -51,9 +51,6 @@
     <div class="container" role="main">
 <?php include 'title.php'; ?>    
     <div class="row">
-<div class="col-xs-12">
-<div class-"jumbotron"><h1>Samantha Gadsden <small>Birth, ante and post natal doula covering south Wales</small></h1></div>
-</div>
 <div class="col-xs-12"><h2>Doula services</h2>
 <p>Preamble, possibly talking about how services are flexible, etc</p></div>
             <div class="col-md-8 col-lg-9">
