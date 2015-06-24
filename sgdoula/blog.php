@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Samantha Gadsden Doula - lending library</title>
+    <title>Samantha Gadsden Doula's blog</title>
     <meta name="description" content="Birth, antenatal and postnatal doula mothering the mother in south Wales.">
 
     <!-- Bootstrap -->
@@ -49,34 +49,41 @@
           </ul></div>
       </div>
     </nav></div>
+
     <div class="container" role="main">
-<?php include 'title.php'; ?>    
-    <div class="row">
-            <div class="col-xs-12"><h2>Lending library</h2>
-                <p>I have a collection of childbirth and parenting books available to loan. I charge £2.50 plus a £10 deposit to borrow a book. Borrowing is free to clients.</p></div>
-            <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Childbirth books</h3>
-                    </div>
-                    <div class="list-group">
-                        <a class="list-group-item" href="http://www.pinterandmartin.com/sweet-sleep.html"><i class="fa fa-book"></i>cSweet sleep: nighttime and naptime strategies for the breastfeeding family</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Sleep books</h3>
-                    </div>
-                    <div class="list-group">
-                        <a class="list-group-item" href="http://www.pinterandmartin.com/sweet-sleep.html"><i class="fa fa-video-camera"></i> Sweet sleep: nighttime and naptime strategies for the breastfeeding family</a>
-                    </div>
-                </div>
-            </div>
+<?php include 'title.php'; ?>
+        <div class="row">
+
             <div class="col-xs-12">
-                <h2>Maternity wear</h2>
-                <p>I also have maternity wear to lend out ....</p>
+                <h2>Blog</h2>
+<div class="blog-main"><?php
+    // First we need the Facebook ID of our page. You can get this from the About -> Page Info screen of any Facebook page.
+    $pageID = '841192052579229';
+ 
+    // Hidden behind every Facebook page is a simple RSS feed, but to get to it we have to pretend to be a web browser. We do this by faking a common user agent string. This one is Chrome on a 64bit Linux system.
+    ini_set('user_agent', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) ');
+ 
+    // Next, load the RSS feed into SimpleXML.
+    $facebook_xml = simplexml_load_file('http://www.facebook.com/feeds/page.php?format=rss20&id='.$pageID);
+
+	$out = ''; 
+	$i = 1;
+	foreach( $facebook_xml->channel->item as $item ){
+
+		$out .= '<div class="blog-post">';
+		$out .= '<h3 class="blog-post-title"><a href="' . $item->link . '">' . $item->title . '</a></h3>';
+                $date = explode (" ", $item->pubDate, 5);
+		$out .= '<div class="blog-post-meta">' . $date[0] . ' ' . $date[1] . ' ' . $date[2] . ' ' . $date[3] . ' by Samantha Gadsden</div>';
+		$out .= '<div class="content">' . $item->description . '</div></div>';
+		
+		if( $i == $no ) break;
+		$i++;
+	}
+	
+	echo $out;
+
+ 
+?>
             </div>
         </div>
     </div> <!-- /container -->

@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
 <body role="document">
-
+<?php include_once("analyticstracking.php") ?>
     <!-- Fixed navbar -->
     <div class="container" role="navigation">
     <nav class="navbar navbar-inverse" role="navigation">
